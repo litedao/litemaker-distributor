@@ -5,7 +5,8 @@ import 'dappsys/gov/easy_multisig.sol';
 // Based on final bobchain
 // ipfs: QmSJNuS2nrcmKgVuUDyT3UrGKuSFF2bBEsjgYeToe4WDG6
 // git: 72b9ac20a39d0ee7e6996270021dd558958fa464
-contract MKR_Distributor is MakerUser {
+// kedia: MRK to LMK + Maker to LiteMaker
+contract LMK_Distributor is LiteMakerUser {
     address fund;
     mapping( address => uint ) public allocation;
     function MKR_Distributor( address registry, address mkr_fund )
